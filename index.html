@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puma</title>
+        <!-- file css -->
+        <link rel="stylesheet" href="/index.css">
+        <!-- file normlaiz -->
+        <link rel="stylesheet" href="/normlaiz.css">
+        <!-- font size  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch&family=Work+Sans:ital,wght@0,100;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- font icose  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- meta media qeris -->
+        <meta name=viewport content=width=device-width>
+        <meta name=viewport content=width=device-width, initial-scale=1>
+</head>
+<body>
+    <!-- start headr -->
+    <header>
+        <div class="contenr">
+            <i class="fa-sharp fa-solid fa-bars" id="in"></i>
+            <svg class="w-8 h-8 md:w-10 lg:w-12 lg:h-12 text-white" fill="currentColor" viewBox="0 0 48 37" aria-hidden="true"><path d="M47.689.517c-.834-1.066-2.291-.213-2.933.16-4.569 2.692-5.243 7.432-6.834 10.154-1.253 2.178-3.304 3.779-5.159 3.903-1.373.098-2.861-.167-4.338-.81-3.613-1.562-5.56-3.583-6.034-3.94-.973-.739-8.459-8.03-14.559-8.327 0 0-.744-1.5-.93-1.526C6.457.08 6 1.033 5.669 1.133c-.3.105-.825-1.024-1.13-.975C4.233.2 3.936 1.33 3.34 1.913c-.439.425-.973.398-1.275.926-.104.192-.068.53-.186.84-.253.641-1.102.708-1.11 1.394 0 .762.714.907 1.338 1.438.496.425.53.725 1.109.924.515.176 1.264-.374 1.928-.177.553.163 1.085.279 1.204.846.108.513 0 1.316-.682 1.226-.222-.03-1.194-.348-2.395-.22-1.45.154-3.105.618-3.267 2.22-.083.895 1.028 1.942 2.11 1.733.742-.143.392-1.013.797-1.433.535-.541 3.545 1.888 6.344 1.888 1.186 0 2.063-.3 2.935-1.21.078-.057.185-.203.31-.218.113.015.324.128.39.175 2.262 1.793 3.967 5.399 12.26 5.441 1.164.014 2.498.558 3.591 1.553.96.866 1.528 2.251 2.075 3.65.836 2.106 2.322 4.139 4.584 6.407.119.135 1.98 1.561 2.119 1.666.025.021.168.334.106.51-.039 1.38-.245 5.34 2.731 5.506.731.04.549-.463.549-.82-.01-.683-.129-1.371.226-2.08.507-.957-1.051-1.418-1.017-3.513.037-1.567-1.291-1.302-1.969-2.498-.381-.687-.736-1.065-.699-1.894.145-4.76-1.034-7.896-1.61-8.654-.455-.587-.847-.806-.414-1.078 2.481-1.632 3.05-3.15 3.05-3.15 1.32-3.081 2.512-5.89 4.15-7.138.332-.241 1.177-.88 1.703-1.12 1.527-.725 2.346-1.156 2.777-1.576.711-.675 1.27-2.107.588-2.96h-.001z"></path></svg>
+            <div class="left_said">
+                <!-- <svg class="w-8 h-8 md:w-10 lg:w-12 lg:h-12 text-white" fill="currentColor" viewBox="0 0 48 37" aria-hidden="true"><path d="M47.689.517c-.834-1.066-2.291-.213-2.933.16-4.569 2.692-5.243 7.432-6.834 10.154-1.253 2.178-3.304 3.779-5.159 3.903-1.373.098-2.861-.167-4.338-.81-3.613-1.562-5.56-3.583-6.034-3.94-.973-.739-8.459-8.03-14.559-8.327 0 0-.744-1.5-.93-1.526C6.457.08 6 1.033 5.669 1.133c-.3.105-.825-1.024-1.13-.975C4.233.2 3.936 1.33 3.34 1.913c-.439.425-.973.398-1.275.926-.104.192-.068.53-.186.84-.253.641-1.102.708-1.11 1.394 0 .762.714.907 1.338 1.438.496.425.53.725 1.109.924.515.176 1.264-.374 1.928-.177.553.163 1.085.279 1.204.846.108.513 0 1.316-.682 1.226-.222-.03-1.194-.348-2.395-.22-1.45.154-3.105.618-3.267 2.22-.083.895 1.028 1.942 2.11 1.733.742-.143.392-1.013.797-1.433.535-.541 3.545 1.888 6.344 1.888 1.186 0 2.063-.3 2.935-1.21.078-.057.185-.203.31-.218.113.015.324.128.39.175 2.262 1.793 3.967 5.399 12.26 5.441 1.164.014 2.498.558 3.591 1.553.96.866 1.528 2.251 2.075 3.65.836 2.106 2.322 4.139 4.584 6.407.119.135 1.98 1.561 2.119 1.666.025.021.168.334.106.51-.039 1.38-.245 5.34 2.731 5.506.731.04.549-.463.549-.82-.01-.683-.129-1.371.226-2.08.507-.957-1.051-1.418-1.017-3.513.037-1.567-1.291-1.302-1.969-2.498-.381-.687-.736-1.065-.699-1.894.145-4.76-1.034-7.896-1.61-8.654-.455-.587-.847-.806-.414-1.078 2.481-1.632 3.05-3.15 3.05-3.15 1.32-3.081 2.512-5.89 4.15-7.138.332-.241 1.177-.88 1.703-1.12 1.527-.725 2.346-1.156 2.777-1.576.711-.675 1.27-2.107.588-2.96h-.001z"></path></svg> -->
+                <div class="box">
+                        <span>NEW ARRIVALS</span>
+                    <div class="muga_manu_one">
+                            <ul>
+                                <li><a href="#">Launch Calendar</a></li>
+                                <li><a href="#">Women's New Arrivals</a></li>
+                                <li><a href="#">Men's New Arrivals</a></li>
+                                <li><a href="#">Kids New Arrivals</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Shop All New Arrivals</a></li>
+                                <li><a href="#">PUMA x VOGUE</a></li>
+                                <li><a href="#">PUMA x COCA-COLA</a></li>
+                                <li><a href="#">PUMA x BABY PHAT</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">PUMA x TMC</a></li>
+                                <li><a href="#">MB Collection</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>WOMEN</span>
+                    <div class="muga_manu_two">
+                        <div class="section">
+                            <span>New Arrivals</span>
+                            <span>Best Sellers</span>
+                            <span>Back to School</span>
+                            <span>Backpacks</span>
+                            <span>Retro Reboot</span>
+                            <span>Outdoor Explorer</span>
+                            <span>Safari Glam</span>
+                            <span>NYC Shop</span>
+                            <span>Shoes $85 and Under</span>
+                            <span>Sale</span>
+                        </div>
+                        <ul>
+                            <span>Shoes</span>
+                            <li><a href="#">Classics</a></li>
+                            <li><a href="#">Cali</a></li>
+                            <li><a href="#">RS Collection</a></li>
+                            <li><a href="#">PUMA Rider Pack</a></li>
+                            <li><a href="#">Mayze</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Motorsport</a></li>
+                            <li><a href="#">Slides + Sandals</a></li>
+                        </ul>
+                        <ul>
+                            <span>Clothing</span>
+                            <li><a href="#">Classics</a></li>
+                            <li><a href="#">Hoodies + Sweatshirts</a></li>
+                            <li><a href="#">T-Sirts + Tops</a></li>
+                            <li><a href="#">Leggings</a></li>
+                            <li><a href="#">Dresses + Skirts</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Bras</a></li>
+                            <li><a href="#">Tracksuits</a></li>
+                            <li><a href="#">Jacets + Outerwear</a></li>
+                            <li><a href="#">Pans</a></li>
+                            <li><a href="#">Loungewear</a></li>
+                            <li><a href="#">Matching Sets</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Maternity</a></li>
+                        </ul>
+                        <ul>
+                            <span>Accesorier</span>
+                            <li><a href="#">BUMA x ModiBodi</a></li>
+                            <li><a href="#">Bags + Backpacks</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Face Massks + Gaiers</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Sunglasses</a></li>
+                            <li><a href="#">Sports Equipment</a></li>
+                            <li><a href="#">Soccer Balls</a></li>
+                        </ul>
+                        <ul>
+                            <span>Sports</span>
+                            <li><a href="#">Training + Gym</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Motorsport</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Yoga</a></li>
+                            <li><a href="#">Soccer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>MEN</span>
+                </div>
+                <div class="box">
+                    <span>KIDS</span>
+                </div>
+                <div class="box">
+                    <span>CILLABORATIONS</span>
+                    <div class="muga_manu_four">
+                            <ul>
+                                <span>Select</span>
+                                <li><a href="#">PUMA x INLAND</a></li>
+                                <li><a href="#">PUMA x LIBERTY</a></li>
+                                <li><a href="#">PUMA x AMI</a></li>
+                                <li><a href="#">PUMA x BUTTER GOODS</a></li>
+                                </ul>
+
+                            <ul>
+                                <span>Partnships</span>
+                                <li><a href="#">PUMA x MAGGIE STPHNSON</a></li>
+                                <li><a href="#">PUMA x MARKET</a></li>
+                                <li><a href="#">PUMA x VOGUE</a></li>
+                                <li><a href="#">PUMA x TRACKSMITH</a></li>
+                                <li><a href="#">PUMA x COCA-COLA</a></li>
+                                <li><a href="#">PUMA x BABY PHAT</a></li>
+                                <li><a href="#">PUMA x TMC</a></li>
+                                <li><a href="#">Dua Lipa Collecion</a></li>
+                                <li><a href="#">PUMA x BATMAN</a></li>
+                                <li><a href="#">PUMA x FRIDA KAHLO</a></li>
+                                <li><a href="#">PUMA x BLACK FIVES</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>SPORET</span>
+                </div>
+                <div class="box">
+                    <span>SALE</span>
+                    <div class="muga_manu_three">
+                        <div class="section">
+                            <span>New Arrivals</span>
+                            <span>Best Sellers</span>
+                            <span>Back to School</span>
+                            <span>Backpacks</span>
+                            <span>Retro Reboot</span>
+                            <span>Outdoor Explorer</span>
+                            <span>Safari Glam</span>
+                            <span>NYC Shop</span>
+                            <span>Shoes $85 and Under</span>
+                            <span>Sale</span>
+                        </div>
+                        <ul>
+                            <span>Shoes</span>
+                            <li><a href="#">Classics</a></li>
+                            <li><a href="#">Cali</a></li>
+                            <li><a href="#">RS Collection</a></li>
+                            <li><a href="#">PUMA Rider Pack</a></li>
+                            <li><a href="#">Mayze</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Motorsport</a></li>
+                            <li><a href="#">Slides + Sandals</a></li>
+                        </ul>
+                        <ul>
+                            <span>Clothing</span>
+                            <li><a href="#">Classics</a></li>
+                            <li><a href="#">Hoodies + Sweatshirts</a></li>
+                            <li><a href="#">T-Sirts + Tops</a></li>
+                            <li><a href="#">Leggings</a></li>
+                            <li><a href="#">Dresses + Skirts</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Bras</a></li>
+                            <li><a href="#">Tracksuits</a></li>
+                            <li><a href="#">Jacets + Outerwear</a></li>
+                            <li><a href="#">Pans</a></li>
+                            <li><a href="#">Loungewear</a></li>
+                            <li><a href="#">Matching Sets</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Maternity</a></li>
+                        </ul>
+                        <ul>
+                            <span>Accesorier</span>
+                            <li><a href="#">BUMA x ModiBodi</a></li>
+                            <li><a href="#">Bags + Backpacks</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Face Massks + Gaiers</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Sunglasses</a></li>
+                            <li><a href="#">Sports Equipment</a></li>
+                            <li><a href="#">Soccer Balls</a></li>
+                        </ul>
+                        <ul>
+                            <span>Sports</span>
+                            <li><a href="#">Training + Gym</a></li>
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Motorsport</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Yoga</a></li>
+                            <li><a href="#">Soccer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right_said">
+                <form action="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" value placeholder="Search PUMA.com"> 
+                </form>
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-magnifying-glass" id="in"></i>
+        </div>
+    </header>
+    <!-- end headr -->
+    <!-- start one_lading -->
+    <div class="one_nav">
+        <div class="img">
+            <img src="/imgs/slide_1.06b2d233.jpg" alt="">
+            <div class="filter"></div>
+        </div>
+        <div class="text">
+            <div class="hedin">
+                <h1>JOIN THE </h1>
+                <SPan>MOVEMENT</SPan>
+            </div>
+            <P>TRAIN WITH WOIRLD-CLASS TRAINERS AND ATHLETES 120+ FREE WORKOUTS</P>
+            <H4>Level up your running game Achieve your goals with PUMATRAC</H4>
+            <H5>DOWNLOAD THE APP NOW</H5>
+        </div>
+    </div>
+    <!-- end two_lading -->
+    <!-- start lading -->
+    <div class="lading">
+        <div class="one_cont">
+            <div class="top">
+                <h1>FALL FOOTWEAR FAVORITES</h1>
+                <span>A FEW OF OUR BEST-SELLING SHOES</span>
+            </div>
+            <div class="dawon">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/586ba331914ef4e2d53b8420a7d21fb226fec377-750x750.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>WALKING ON AIR</h2>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/e6c63f54667bbc7af4b4c4860c5e109c3d6255e5-1350x1350.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>SET THE TREND</h2>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/f6b18efd8f98cbab00319e9ac2f7caa841b04e35-750x750.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>COURT-SIDE STYLE</h2>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/ffcc61d19dff6a3124317d40ef2284afe807e76b-750x750.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>RUN THINGS</h2>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end lading -->
+            <!-- start crowd -->
+            <div class="crowd ">
+                <img src="/imgs/dbe37ad1eb1ae2159450122a9ee8507cfc2948d7-1440x500.webp" alt="">
+            <div class="text">
+                <h2>CROWD-PLEASING KICKS</h2>
+                <p>SHOP SHOES OF ALL KIND</p>
+                <div class="spn">
+                    <span>SHOP WOMEN</span>
+                    <span>SHOP MEN</span>
+                    <span>SHOP KIDS</span>
+                </div>
+            </div>
+        </div>
+        <!-- end crowd  -->
+
+    <div class="text_out">
+        <h3>BUILD A FALL FIT</h3>
+        <p>DON’T LEAVE THE HOUSE WITHOUT THE ESSENTIALS</p>
+    </div>
+    <!-- start teshrt -->
+    <div class="teshrt">
+        <div class="tow_cont">
+            <div class="nav">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/173e9bc2e3b57880afdd350b83bc7a0716b63d7e-2000x2208.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>T-SHIRTS</h4>
+                        <p>FOR WARM DAYS</p>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/3652004dfa07b1cb1d96adde13ef9d71191edebc-6351x4234.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>SWEATHIRTS</h4>
+                        <p>FOR COOL NIGHTS</p>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+            </div>
+            <h2>BEST-SELLERS WE THINK YOU’LL LIKE</h2>
+        </div>
+    </div>
+    <!-- end teshrt -->
+    <!-- start tshos -->
+    <div class="shoes">
+        <div class="three_cont">
+            <div class="canp">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Cell-Vive-Men's-Running-Shoes.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Cell Vive Men's Running Shoes</p>
+                        <span>44.4$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Riaze-Prowl-Palm-Women's-Running-Shoes.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Better Foam Emerge Street Men's</p>
+                        <span>50.55$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Better-Foam-Emerge-Street-Men's-Running-Shoes.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Riaze Prowl Palm Women's Running</p>
+                        <span>34.5$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Riaze-Prowl-Pop-Women's-Running-Shoes.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Essentials Logo Men's Pants</p>
+                        <span>29.99$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Carina-2.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Carina 2.0 Mid Women's Sneakers</p>
+                        <span>59.10$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="file">
+            <h2>WORK UP A SWEAT</h2>
+            <p>GEAR FOR GETTING OUTSIDE</p>
+        </div>
+    </div>
+    <!-- end tshos -->
+    <!-- start  sweat  -->
+    <div class="sweat">
+        <div class="four_cont">
+            <div class="boy">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/054181c59605c628a5708a21a6e47b87748b589e-1536x1536.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>AT THE GYM</h3>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/681116547fe62c03e6da2af1909b1dc99613ff2b-1536x1536.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>BEHIND THE WHEEL</h3>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/eed6cefa9f745a3735e3ccb8c77a7f95507f938f-1536x1536.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>NO THE FILLD</h3>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+            </div>
+            <h2>THE BEST IN PERFORMANCE GEAR</h2>
+        </div>
+    </div>
+    <!-- end sweat -->
+    <!-- start jact -->
+    <div class="jact">
+        <div class="five_cont">
+            <div class="main">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/BMW-M-Motorsport-Hooded-Sweat-Jacket-JR.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>PUMA x TMC Everyday Hussle T7</p>
+                        <span>180.45$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Scuderia-Ferrari-Team-Kids'-Hoodie.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>TRC Blaze Court Basketball Shoes</p>
+                        <span>150.5$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/PUMA-x-TMC-Everyday-Hussle-T7-Jacket.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>PUMA x TMC On The Run Sweatpants</p>
+                        <span>120.99$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Classics-Kids'-Tee.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>PUMA x BATMAN Suede Classic</p>
+                        <span>190.45$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/'23-Replica-Away-Jersey-JR.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Suede Triplex x Black Fives</p>
+                        <span>180.78$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end jact -->
+    <!-- start desain -->
+    <div class="deian">
+        <div class="text">
+            <h3>SHOP ALL RUNNING</h3>
+            <span>SHOP NOW</span>
+        </div>
+    </div>
+    <!-- end desain -->
+    <!-- start jenes -->
+    <div class="jenes">
+        <div class="six_cont">
+            <div class="main">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Essentials-Logo-Men's-Pants (1).webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>BMW M Motorsport Essentials</p>
+                        <span>55.89$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Essentials+-Men's-Shorts.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>ULTRAWEAVE 7" Men's Training</p>
+                        <span>67.80$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/PUMA-Blaster-Men's-Training-Pants.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Studio ULTRAMOVE Men's Training</p>
+                        <span>70.99$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/10_-Big-Logo-Men's-Shorts.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>teamLIGA Graphic Men's Jersey</p>
+                        <span>40.50$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Essentials-Logo-Men's-Pants.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>CLOUDSPUN Short Sleeve Men's</p>
+                        <span>88.69$</span>
+                    </div>
+                </div>
+            </div>
+            <h2>THE BEST IN PERFORMANCE CAP</h2>
+        </div>
+    </div>
+    <!-- end jenes -->
+    <!-- strta cap -->
+    <div class="cap">
+        <div class="six_cont">
+            <div class="main_cap">
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Essentials-Cap.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Bristol Low Curve Adjustable Cap</p>
+                        <span>40.20$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Bristol-Low-Curve-Adjustable-Cap.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>The Daddio Boys' Cap</p>
+                        <span>55.84$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Running-Cap-III.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>PUMA Flow Adjustable Men's Running</p>
+                        <span>25.07$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Essentials-III-Cap.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Scuderia Ferrari SPTWR Style Low</p>
+                        <span>35.99$</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="/imgs/Clone-Trucker-Cap.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Running Cap III</p>
+                        <span>45.12$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cap -->
+    <!-- start puma -->
+    <div class="puma">
+        <img src="/imgs/cca2f5dec798ed8549d2754da6fa8d2f02d6a20a-1920x667.webp" alt="">
+    </div>
+    <!-- end puma -->
+    <!-- start footr -->
+    <footer>
+        <div class="six_cont">
+            <div class="main_foot">
+                <div class="box">
+                    <ul>
+                        <span>Support</span>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Purchase a Digital Gift</a></li>
+                        <li><a href="#">Student Discount</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Shipping and Delivery</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Service Discount</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Transparency in Supply Chain</a></li>
+                        <li><a href="#">Check Gift Card Balance</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <span>About</span>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Press Center</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Corporate News</a></li>
+                        <li><a href="#">#REFORM</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="input">
+                    <div class="form">
+                        <form action="">
+                            <label for="">Newsletter sign up</label>
+                            <input type="email" value placeholder="Email">
+                            <input type="text" value placeholder="Select lagung" >
+                        </form>
+                    </div>    
+                        <div class="trac">
+                            <svg width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" aria-hidden="true"><g><path fill="#FFFFFF" d="M44.234,13.265c0.264-0.005,0.514,0.118,0.67,0.329c0.428,0.545,0.078,1.451-0.369,1.884 c-0.277,0.27-0.788,0.547-1.756,1.005c-0.324,0.154-0.86,0.557-1.069,0.715c-1.036,0.794-1.788,2.585-2.624,4.548 c0,0-0.354,0.965-1.926,2.004c-0.262,0.172-0.025,0.317,0.262,0.689c0.372,0.482,1.112,2.48,1.018,5.512 c-0.017,0.536,0.199,0.77,0.445,1.209c0.426,0.761,1.266,0.595,1.244,1.589c-0.027,1.341,0.959,1.627,0.645,2.244 c-0.231,0.452-0.153,0.887-0.151,1.325c0,0.224,0.12,0.55-0.341,0.522c-1.881-0.11-1.756-2.637-1.721-3.505 c0.03-0.113-0.057-0.32-0.07-0.33c-0.09-0.066-1.268-0.979-1.344-1.057c-1.424-1.448-2.362-2.748-2.887-4.086 c-0.348-0.89-0.705-1.772-1.316-2.333c-0.68-0.628-1.524-0.977-2.26-0.98c-5.233-0.028-6.31-2.325-7.734-3.472 c-0.075-0.053-0.161-0.089-0.25-0.108c-0.078,0.006-0.142,0.103-0.191,0.143c-0.55,0.574-1.105,0.765-1.85,0.765 c-1.768,0-3.673-1.552-4.005-1.205c-0.257,0.27-0.038,0.823-0.505,0.916c-0.653,0.13-1.324-0.479-1.331-1.03v-0.016 c0-0.02,0.001-0.038,0.003-0.057c0.102-1.02,1.144-1.318,2.058-1.419c0.756-0.085,1.374,0.123,1.516,0.142 c0.423,0.056,0.496-0.454,0.425-0.786c-0.075-0.355-0.412-0.43-0.758-0.532c-0.423-0.125-0.893,0.224-1.21,0.114 c-0.372-0.13-0.397-0.321-0.709-0.593c-0.387-0.34-0.841-0.43-0.84-0.914c0-0.44,0.539-0.478,0.697-0.89 c0.076-0.2,0.053-0.414,0.12-0.536c0.185-0.334,0.527-0.317,0.803-0.59c0.375-0.37,0.56-1.087,0.757-1.118 c0.197-0.03,0.522,0.688,0.716,0.624c0.205-0.068,0.493-0.674,0.772-0.639c0.12,0.015,0.593,0.969,0.593,0.969 c3.842,0.193,8.573,4.839,9.184,5.309c0.294,0.227,1.534,1.512,3.806,2.509c0.934,0.408,1.87,0.581,2.738,0.521 c1.162-0.083,2.457-1.104,3.255-2.487c1-1.738,1.428-4.761,4.313-6.475c0.258-0.153,0.725-0.427,1.166-0.429H44.234z M42.089,41.328c0.625,0,1.16,0.176,1.603,0.529c0.445,0.353,0.726,0.879,0.845,1.578h-1.322c-0.058-0.256-0.187-0.491-0.37-0.68 c-0.178-0.178-0.43-0.266-0.755-0.266c-0.181,0-0.342,0.029-0.483,0.093c-0.221,0.097-0.4,0.269-0.506,0.487 c-0.039,0.088-0.072,0.199-0.098,0.338c-0.025,0.137-0.044,0.31-0.057,0.52c-0.012,0.209-0.019,0.473-0.019,0.791 c0,0.319,0.007,0.583,0.019,0.792c0.013,0.21,0.031,0.382,0.057,0.521c0.025,0.137,0.057,0.25,0.098,0.337 c0.105,0.218,0.285,0.391,0.506,0.487c0.141,0.062,0.303,0.094,0.483,0.094c0.325,0,0.577-0.09,0.755-0.268s0.301-0.404,0.37-0.68 h1.322c-0.119,0.7-0.399,1.227-0.845,1.58c-0.443,0.352-0.978,0.529-1.603,0.529c-0.387,0-0.726-0.062-1.012-0.184 c-0.29-0.123-0.554-0.299-0.778-0.52c-0.157-0.153-0.289-0.33-0.39-0.525c-0.093-0.188-0.159-0.389-0.196-0.595 c-0.043-0.233-0.067-0.47-0.074-0.707c-0.021-0.575-0.021-1.149,0-1.724c0.008-0.256,0.033-0.491,0.074-0.707 c0.04-0.215,0.105-0.414,0.196-0.596c0.091-0.181,0.22-0.355,0.39-0.524c0.225-0.221,0.488-0.397,0.778-0.521 C41.398,41.382,41.742,41.32,42.089,41.328z M32.92,45.777h1.641l-0.815-2.416L32.92,45.777z M36.689,48.055H35.32l-0.394-1.181 h-2.362l-0.403,1.181h-1.369l2.438-6.671h1.021L36.689,48.055z M24.361,42.546v1.752h1.237c0.288,0,0.516-0.082,0.685-0.243 c0.17-0.168,0.262-0.398,0.253-0.638c0-0.262-0.085-0.474-0.253-0.632c-0.17-0.16-0.397-0.24-0.685-0.24L24.361,42.546 L24.361,42.546z M25.673,41.384c0.344,0,0.65,0.056,0.92,0.164c0.268,0.11,0.494,0.257,0.679,0.44 c0.184,0.185,0.325,0.4,0.422,0.646c0.097,0.246,0.145,0.51,0.145,0.791c0,0.238-0.033,0.452-0.098,0.643 c-0.118,0.354-0.349,0.66-0.657,0.871c-0.143,0.101-0.299,0.182-0.464,0.24l1.49,2.875h-1.509l-1.303-2.66h-0.937v2.66h-1.303 v-6.671H25.673z M19.654,42.546h-1.743v5.509h-1.304v-5.509h-1.743v-1.162h4.79V42.546z"></path></g></svg>
+                            <p>TRAIN WITH THE FASTEST</p>
+                        </div>
+                </div>
+            </div>
+            <div class="the_end">
+                    <div class="icns">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="text">
+                        <h6>© PUMA North America, Inc.
+                            Imprint and Legal Data</h6>
+                    </div>
+                    <div class="imgs">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-apple-pay"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                    </div>
+            </div>
+        </div>
+        <div class="bio">
+            <h4>All Rights Reserved to Develop - Eng: Salama AL-Eajala © 2022</h4>
+        </div>
+    </footer>
+    <!-- end footr -->
+</body>
+</html>
